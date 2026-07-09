@@ -1,5 +1,5 @@
 {% set name = "reno-sd" %}
-{% set python_min = "3.11" %}
+{% set python_min = "3.12" %}
 {% set version = "0.14.0" %}
 
 package:
@@ -25,8 +25,8 @@ requirements:
     - numpy
     - pandas
     - xarray
-    - panel <1.8
-    - pymc
+    - panel 
+    - pymc >=6
     - matplotlib-base
     - selenium
     - ipyvuetify
