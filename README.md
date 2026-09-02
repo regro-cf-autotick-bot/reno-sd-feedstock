@@ -42,31 +42,73 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `reno-sd` can be installed with `conda`:
+How to use
+----------
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda install reno-sd
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba install reno-sd
 ```
 
-It is possible to list all of the versions of `reno-sd` available on your platform with `conda`:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+# for adding to your local project
+pixi add reno-sd
+# for installing globally
+pixi global install reno-sd
+```
+
+</details>
+
+Search package versions
+-----------------------
+
+It is possible to list all of the versions of `reno-sd` available on your platform:
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda search reno-sd --channel conda-forge
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba search reno-sd --channel conda-forge
 ```
 
-Alternatively, `mamba repoquery` may provide more information:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+pixi search reno-sd --channel conda-forge
+```
+
+</details>
+
+<details>
+<summary>With mamba repoquery, which may provide more information</summary>
 
 ```
 # Search all versions available on your platform:
@@ -78,6 +120,8 @@ mamba repoquery whoneeds reno-sd --channel conda-forge
 # List dependencies of `reno-sd`:
 mamba repoquery depends reno-sd --channel conda-forge
 ```
+
+</details>
 
 
 About conda-forge
